@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'BreeSerif';
+    src: url('../fonts/BreeSerif-Regular.otf');
+}
+
+@mixin more-button {
+    background-color: $green;
+    border: none;
+    color: white;
+    float: right;
+    margin: 0 20px 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+
+    &:hover {
+        background-color: $lightgreen;
+    } 
+}
+
+body {
+    margin: 0;
+    font-family: 'BreeSerif';
+    background-color: #f7f7f7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+$green: #5A9E61;
+$lightgreen: #84BE91;
+$darkgray: #333333;
+$lightgray: #B0B0B0;
+
+@import './header';
+@import './hero';
+@import './columns';
+@import './footer';
